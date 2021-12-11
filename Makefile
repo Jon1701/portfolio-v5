@@ -1,5 +1,6 @@
 # Path to Node Modules binaries.
-PATH_NODE_MODULES_BIN=./node_modules/.bin
+PATH_NODE_MODULES=./node_modules
+PATH_NODE_MODULES_BIN=${PATH_NODE_MODULES}/.bin
 
 # Gatsby Development server port.
 PORT_DEV_SERVER=8080
@@ -38,3 +39,12 @@ clean:
 	@echo "Cleaning generated artifacts..."
 	@${PATH_NODE_MODULES_BIN}/gatsby clean 
 	@echo "Done cleaning generated artifacts"
+
+# Runs the linter to check code quality for JavaScript.
+lint-js:
+	@echo "Linting JavaScript..."
+	@${PATH_NODE_MODULES_BIN}/eslint \
+		--config .eslintrc.js \
+		--ext .js \
+		.
+	@echo "Done linting JavaScript"
