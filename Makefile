@@ -48,3 +48,10 @@ lint-js:
 		--ext .js \
 		.
 	@echo "Done linting JavaScript"
+
+# Runs the linter to check code quality for styles.
+lint-css:
+	@echo "Linting styles..."
+	@${PATH_NODE_MODULES_BIN}/stylelint \
+		'./src/**/*.js'
+	@echo "Done linting styles"
