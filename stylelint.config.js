@@ -6,5 +6,6 @@ module.exports = {
       "stylelint-config-recommended",
       "stylelint-config-styled-components",
       "stylelint-config-standard-scss",
+      'stylelint-config-prettier',
     ]
   }
