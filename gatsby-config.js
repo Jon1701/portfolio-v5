@@ -33,6 +33,7 @@ module.exports = {
           _components: 'src/components',
           _images: 'src/images',
           _pages: 'src/pages',
+          _styles: 'src/styles',
         },
         extensions: ['js'],
       },
