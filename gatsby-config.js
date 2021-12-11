@@ -24,5 +24,20 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "_src": "src",
+          "_fonts": "src/fonts",
+          "_components": "src/components",
+          "_images": "src/images",
+          "_pages": "src/pages",
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    }
   ],
 };
