@@ -1,7 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
-import { ZenMaruGothicRegular } from '_fonts/FontFaces/ZenMaruGothic';
+import {
+  ZenMaruGothicRegular,
+  ZenMaruGothicBlack,
+} from '_fonts/FontFaces/ZenMaruGothic';
 
 /**
  * Define Global Stylesheet for the body tag.
@@ -25,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 const Wrapper = () => (
   <React.Fragment>
     <ZenMaruGothicRegular />
+    <ZenMaruGothicBlack />
     <GlobalStyle />
   </React.Fragment>
 );
