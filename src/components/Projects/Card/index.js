@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import InternalLinkButton from '_components/Buttons/Button/InternalLink';
+
 /**
  * Component container.
  */
@@ -59,15 +61,24 @@ const ContainerProjectName = styled.div`
 `;
 
 /**
+ * Container for the link button.
+ */
+const ContainerLinkButton = styled.div`
+  text-align: center;
+  margin-top: 25px;
+`;
+
+/**
  * Displays a card containing a preview image, project name, and description.
  *
  * @param {object} props Component props.
  * @param {string} props.name Project Name.
  * @param {string} props.imageSrc URL to the image.
+ * @param {string} props.urlToProjectDetailsPage URL to the Project details page.
  * @param {React.Component} props.children Project Description.
  * @returns {React.Component} Card displaying project information.
  */
-const ProjectCard = ({ name, imageSrc, children }) => (
+const ProjectCard = ({ name, imageSrc, urlToProjectDetailsPage, children }) => (
   <Container>
     <ContainerImage>
       <Image src={imageSrc} alt={name} />
@@ -75,10 +86,27 @@ const ProjectCard = ({ name, imageSrc, children }) => (
     <ContainerDescription>
       <ContainerProjectName>{name}</ContainerProjectName>
       <div>{children}</div>
+
+      {urlToProjectDetailsPage ? (
+        <ContainerLinkButton>
+          <InternalLinkButton to={urlToProjectDetailsPage}>
+            Learn More!
+          </InternalLinkButton>
+        </ContainerLinkButton>
+      ) : null}
     </ContainerDescription>
   </Container>
 );
 
-ProjectCard.propTypes = {};
+ProjectCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  urlToProjectDetailsPage: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+ProjectCard.defaultProps = {
+  urlToProjectDetailsPage: null,
+};
 
 export default ProjectCard;
