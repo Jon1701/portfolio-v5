@@ -2,23 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import SVGBabel from '_images/svg/babel.svg';
+import SVGChartJS from '_images/svg/chartjs.svg';
 import SVGCSS3 from '_images/svg/css3.svg';
 import SVGDebian from '_images/svg/debian.svg';
 import SVGDocker from '_images/svg/docker.svg';
 import SVGESLint from '_images/svg/eslint.svg';
 import SVGGatsby from '_images/svg/gatsby.svg';
 import SVGGit from '_images/svg/git.svg';
+import SVGGulp from '_images/svg/gulp.svg';
 import SVGHTML5 from '_images/svg/html5.svg';
 import SVGJavaScript from '_images/svg/javascript.svg';
 import SVGJest from '_images/svg/jest.svg';
+import SVGjQuery from '_images/svg/jquery.svg';
+import SVGMocha from '_images/svg/mocha.svg';
+import SVGMySQL from '_images/svg/mysql.svg';
 import SVGNodeJS from '_images/svg/nodejs.svg';
 import SVGPHP from '_images/svg/php.svg';
+import SVGPostCSS from '_images/svg/postcss.svg';
 import SVGPrettier from '_images/svg/prettier.svg';
 import SVGReact from '_images/svg/react.svg';
 import SVGReactRouter from '_images/svg/react-router.svg';
 import SVGRedux from '_images/svg/redux.svg';
+import SVGSass from '_images/svg/sass.svg';
 import SVGStyledComponents from '_images/svg/styled-components.svg';
 import SVGStylelint from '_images/svg/stylelint.svg';
+import SVGTravis from '_images/svg/travis.svg';
 import SVGWebpack from '_images/svg/webpack.svg';
 import SVGWordPress from '_images/svg/wordpress.svg';
 
@@ -52,23 +61,33 @@ const Image = styled.img`
 
 // Accepted enums.
 const enums = Object.freeze({
+  babel: 'babel',
+  chartjs: 'chartjs',
   css3: 'css3',
   debian: 'debian',
   docker: 'docker',
   eslint: 'eslint',
   gatsby: 'gatsby',
   git: 'git',
+  gulp: 'gulp',
   html5: 'html5',
   javascript: 'javascript',
+  javascriptES5: 'javascript-es5',
   jest: 'jest',
+  jquery: 'jquery',
+  mocha: 'mocha',
+  mysql: 'mysql',
   node: 'node',
   php: 'php',
+  postcss: 'postcss',
   prettier: 'prettier',
-  reactRouter: 'react-router',
   react: 'react',
+  reactRouter: 'react-router',
   redux: 'redux',
+  sass: 'sass',
   styledComponents: 'styled-components',
   stylelint: 'stylelint',
+  travis: 'travis',
   webpack: 'webpack',
   wordpress: 'wordpress',
 });
@@ -76,6 +95,14 @@ const enums = Object.freeze({
 // Defines the path to the SVG and the technology name
 // associated with a technology enum.
 const definitions = {
+  [enums.babel]: {
+    src: SVGBabel,
+    name: 'Babel',
+  },
+  [enums.chartjs]: {
+    src: SVGChartJS,
+    name: 'Chart.js',
+  },
   [enums.css3]: {
     src: SVGCSS3,
     name: 'CSS',
@@ -100,6 +127,10 @@ const definitions = {
     src: SVGGit,
     name: 'Git',
   },
+  [enums.gulp]: {
+    src: SVGGulp,
+    name: 'Gulp',
+  },
   [enums.html5]: {
     src: SVGHTML5,
     name: 'HTML5',
@@ -108,9 +139,25 @@ const definitions = {
     src: SVGJavaScript,
     name: 'JavaScript (ES6+)',
   },
+  [enums.javascriptES5]: {
+    src: SVGJavaScript,
+    name: 'JavaScript (ES5)',
+  },
   [enums.jest]: {
     src: SVGJest,
     name: 'Jest',
+  },
+  [enums.jquery]: {
+    src: SVGjQuery,
+    name: 'jQuery',
+  },
+  [enums.mocha]: {
+    src: SVGMocha,
+    name: 'Mocha',
+  },
+  [enums.mysql]: {
+    src: SVGMySQL,
+    name: 'MySQL',
   },
   [enums.node]: {
     src: SVGNodeJS,
@@ -119,6 +166,10 @@ const definitions = {
   [enums.php]: {
     src: SVGPHP,
     name: 'PHP',
+  },
+  [enums.postcss]: {
+    src: SVGPostCSS,
+    name: 'PostCSS',
   },
   [enums.prettier]: {
     src: SVGPrettier,
@@ -136,6 +187,10 @@ const definitions = {
     src: SVGRedux,
     name: 'Redux',
   },
+  [enums.sass]: {
+    src: SVGSass,
+    name: 'Sass',
+  },
   [enums.styledComponents]: {
     src: SVGStyledComponents,
     name: 'Styled Components',
@@ -143,6 +198,10 @@ const definitions = {
   [enums.stylelint]: {
     src: SVGStylelint,
     name: 'Stylelint',
+  },
+  [enums.travis]: {
+    src: SVGTravis,
+    name: 'TravisCI',
   },
   [enums.webpack]: {
     src: SVGWebpack,
