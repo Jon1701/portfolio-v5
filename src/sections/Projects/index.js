@@ -62,7 +62,7 @@ const ProjectsSection = () => (
       </ProjectCard>
 
       <ProjectCard
-        name="evoplugin.com"
+        name="EVO Website"
         imageSrc={CardImageEVOWebsite}
         urlToProjectDetailsPage="/projects/evo-website">
         evoplugin.com served as a product page for the EVO WordPress SEO plugin
@@ -70,7 +70,7 @@ const ProjectsSection = () => (
       </ProjectCard>
 
       <ProjectCard
-        name="navigategroup.com"
+        name="Navigate Group Website"
         imageSrc={CardImageNavigateGroupWebsite}
         urlToProjectDetailsPage="/projects/navigate-group-website">
         navigategroup.com is the website for Navigate Group, a sister company to
