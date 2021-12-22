@@ -1,13 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Section, Margin, H1 } from '_templates/Sections/MainPage';
+import { Margin, H1 } from '_templates/Sections/MainPage';
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
 
 /**
- * Custom Section.
+ * Section.
  */
-const CustomSection = styled(Section)`
+const Section = styled.section`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
   text-align: center;
+
+  ${mobileBreakpoint`
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  `}
+
+  ${tabletBreakpoint`
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  `}
+
+  ${desktopBreakpoint`
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  `}
 `;
 
 /**
@@ -37,7 +67,7 @@ const Tagline = styled.div``;
  * @returns {React.Component} Landing Section.
  */
 const LandingSection = () => (
-  <CustomSection minHeight="100vh">
+  <Section>
     <Margin>
       <Name>Jon Balon</Name>
 
@@ -48,7 +78,7 @@ const LandingSection = () => (
         the latest technologies.
       </Tagline>
     </Margin>
-  </CustomSection>
+  </Section>
 );
 
 export default LandingSection;
