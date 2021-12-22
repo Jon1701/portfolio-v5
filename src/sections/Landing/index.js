@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Margin, H1 } from '_templates/Sections/MainPage';
 import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import GenericButton from '_components/Buttons/Button/Generic';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
 import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
 
@@ -66,8 +67,8 @@ const Tagline = styled.div``;
  *
  * @returns {React.Component} Landing Section.
  */
-const LandingSection = () => (
-  <Section>
+const LandingSection = React.forwardRef(({ scrollToAboutMeSection }, ref) => (
+  <Section ref={ref}>
     <Margin>
       <Name>Jon Balon</Name>
 
@@ -77,8 +78,14 @@ const LandingSection = () => (
         I am a Front-End Web Developer who builds modern web applications with
         the latest technologies.
       </Tagline>
+
+      <div style={{ marginTop: '25px' }}>
+        <GenericButton type="button" onClick={scrollToAboutMeSection}>
+          Learn More
+        </GenericButton>
+      </div>
     </Margin>
   </Section>
-);
+));
 
 export default LandingSection;

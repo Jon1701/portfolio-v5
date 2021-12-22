@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Section, Margin, H2 } from '_templates/Sections/MainPage';
 import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import GenericButton from '_components/Buttons/Button/Generic';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
 import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
 
@@ -54,28 +55,40 @@ const Grid = styled.div`
  *
  * @returns {React.Component} Section.
  */
-const AboutMeSection = () => (
-  <Section minHeight="100vh">
-    <Margin>
-      <CustomH2>About Me</CustomH2>
+const AboutMeSection = React.forwardRef(
+  ({ scrollToWorkExperienceSection }, ref) => (
+    <Section minHeight="100vh" ref={ref}>
+      <Margin>
+        <CustomH2>About Me</CustomH2>
 
-      <p>Hi! My name is Jon. I am a self-taught developer based in Toronto.</p>
+        <p>
+          Hi! My name is Jon. I am a self-taught developer based in Toronto.
+        </p>
 
-      <p>
-        My interest in web development began in 2016, and since then, I have had
-        the privilege of working at two startups: a Software as a Service
-        incubator startup, as well as a Payment Processor startup.
-      </p>
+        <p>
+          My interest in web development began in 2016, and since then, I have
+          had the privilege of working at two startups: a Software as a Service
+          incubator startup, as well as a Payment Processor startup.
+        </p>
 
-      <p>Here are some of the technologies I have used throughout my career:</p>
+        <p>
+          Here are some of the technologies I have used throughout my career:
+        </p>
 
-      <ContainerGrid>
-        <Grid>
-          <Technologies />
-        </Grid>
-      </ContainerGrid>
-    </Margin>
-  </Section>
+        <ContainerGrid>
+          <Grid>
+            <Technologies />
+          </Grid>
+        </ContainerGrid>
+
+        <div style={{ marginTop: '25px', textAlign: 'center' }}>
+          <GenericButton type="button" onClick={scrollToWorkExperienceSection}>
+            See Where I've Worked
+          </GenericButton>
+        </div>
+      </Margin>
+    </Section>
+  )
 );
 
 export default AboutMeSection;
