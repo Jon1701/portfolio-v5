@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
+
 /**
  * Section component.
  *
@@ -8,10 +12,7 @@ import styled from 'styled-components';
  * @returns {React.Component} Section component.
  */
 const Section = styled.section`
-  display: flex;
-  flex-flow: column nowrap;
-
-  min-height: ${props => props.minHeight || 'auto'};
+  min-height: ${props => props.minHeight};
 `;
 
 /**
@@ -74,4 +75,26 @@ const H6 = styled.h6`
   margin-bottom: ${props => props.marginBottom || '1.67em'};
 `;
 
-export { Section, H1, H2, H3, H4, H5, H6 };
+/**
+ * Grid for Technologies.
+ */
+const TechnologiesGrid = styled.div`
+  display: grid;
+
+  ${mobileBreakpoint`
+    grid-template-columns: 80px 80px 80px;
+    grid-gap: 15px;
+  `}
+
+  ${tabletBreakpoint`
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+  `}
+
+  ${desktopBreakpoint`
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+  `}
+`;
+
+export { Section, H1, H2, H3, H4, H5, H6, TechnologiesGrid };
