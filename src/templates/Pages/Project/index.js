@@ -12,6 +12,7 @@ const Page = styled.main`
   background-image: url(${HIXSEvolutionPattern});
   background-attachment: fixed;
   padding-top: 35px;
+  padding-bottom: 100px;
 
   color: #fff;
 `;
