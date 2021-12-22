@@ -230,6 +230,4 @@ const EVOSEOPluginProjectDetailsPage = props => (
   </Page>
 );
 
-EVOSEOPluginProjectDetailsPage.propTypes = {};
-
 export default EVOSEOPluginProjectDetailsPage;
