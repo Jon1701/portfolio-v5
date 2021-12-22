@@ -1,3 +1,6 @@
+# Path to Public Static folder.
+PATH_TO_PUBLIC_PROJECT_SCREENSHOTS_FOLDER=./public/static/ProjectScreenshots
+
 # Path to Node Modules binaries.
 PATH_NODE_MODULES=./node_modules
 PATH_NODE_MODULES_BIN=${PATH_NODE_MODULES}/.bin
@@ -55,3 +58,11 @@ lint-css:
 	@${PATH_NODE_MODULES_BIN}/stylelint \
 		'./src/**/*.js'
 	@echo "Done linting styles"
+
+# Copy Project Screenshots to the public static folder.
+copy-project-screenshots:
+	@echo "Copying Project screenshots to ${PATH_TO_PUBLIC_PROJECT_SCREENSHOTS_FOLDER} ..."
+	@rm -rf ${PATH_TO_PUBLIC_PROJECT_SCREENSHOTS_FOLDER}
+	@mkdir -p ${PATH_TO_PUBLIC_PROJECT_SCREENSHOTS_FOLDER}
+	@cp -a ${WORK_PROJECTS_FOLDER}/. ${PATH_TO_PUBLIC_PROJECT_SCREENSHOTS_FOLDER}/
+	@echo "Done copying Project screenshots"
