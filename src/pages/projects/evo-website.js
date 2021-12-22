@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 import { Page, Margin } from '_templates/Pages/Project';
 import { Section, H1, H2 } from '_templates/Sections/ProjectPage';
@@ -78,6 +79,10 @@ const technologiesUsed = [
  */
 const EVOWebsiteProjectDetailsPage = props => (
   <Page>
+    <Helmet>
+      <title>EVO Website &mdash; Project Details</title>
+    </Helmet>
+
     <GlobalStyle />
 
     <Margin>
