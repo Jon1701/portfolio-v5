@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import { Margin, H2 } from '_templates/Sections/MainPage';
 import GitHubIcon from '_images/icons/GitHub';
 import LinkedInIcon from '_images/icons/LinkedIn';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
 
 import ExternalLink from './components/ExternalLink';
 
@@ -25,6 +28,23 @@ const CustomH2 = styled(H2)`
 `;
 
 /**
+ * Custom Paragraph component.
+ */
+const Paragraph = styled.p`
+  ${mobileBreakpoint`
+    text-align: center;
+  `}
+
+  ${tabletBreakpoint`
+    text-align: left;
+  `}
+
+  ${desktopBreakpoint`
+    text-align: left;
+  `}
+`;
+
+/**
  * Container for the external links.
  */
 const ContainerExternalLinks = styled.div`
@@ -41,7 +61,7 @@ const ContainerExternalLinks = styled.div`
  */
 const ContainerCopyright = styled.div`
   text-align: center;
-  padding: 25px;
+  padding: 25px 0;
 `;
 
 /**
@@ -54,11 +74,11 @@ const Footer = () => (
     <Margin>
       <CustomH2>Let's Work Together</CustomH2>
 
-      <p>
+      <Paragraph>
         I am currently seeking a job as a remote Front-End React Developer. So,
         if you like my portfolio and think I am suited for a position at your
         company, let's get in touch:
-      </p>
+      </Paragraph>
 
       <ContainerExternalLinks>
         <ExternalLink
@@ -73,7 +93,7 @@ const Footer = () => (
         />
       </ContainerExternalLinks>
 
-      <ContainerCopyright>&copy; 2022 &mdash; Jon Balon</ContainerCopyright>
+      <ContainerCopyright>&copy; 2022 Jon Balon</ContainerCopyright>
     </Margin>
   </Container>
 );
