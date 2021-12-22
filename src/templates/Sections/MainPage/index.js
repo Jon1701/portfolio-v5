@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
+
 /**
  * Section component.
  *
@@ -9,12 +13,7 @@ import PropTypes from 'prop-types';
  * @returns {React.Component} Section component.
  */
 const Section = styled.section`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-
-  min-height: ${props => props.minHeight || 'auto'};
+  min-height: ${props => props.minHeight};
 `;
 
 Section.propTypes = {
@@ -29,8 +28,20 @@ Section.defaultProps = {
  * Section margin.
  */
 const Margin = styled.div`
-  max-width: 800px;
-  width: 100%;
+  ${mobileBreakpoint`
+    margin-left: 10px;
+    margin-right: 10px;
+  `}
+
+  ${tabletBreakpoint`
+    margin-left: 50px;
+    margin-right: 50px;
+  `}
+
+  ${desktopBreakpoint`
+    max-width: 900px;
+    margin: 0 auto;
+  `}
 `;
 
 /**
