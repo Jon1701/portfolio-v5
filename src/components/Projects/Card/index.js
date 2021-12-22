@@ -3,17 +3,31 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import InternalLinkButton from '_components/Buttons/Button/InternalLink';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletAndDesktopBreakpoint from '_util/responsiveDesign/tabletAndDesktopBreakpoint';
 
 /**
  * Component container.
  */
 const Container = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  ${mobileBreakpoint`
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
 
-  margin-bottom: 20px;
+    margin-bottom: 50px;
+  `}
+
+  ${tabletAndDesktopBreakpoint`
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+  `}
+  
   width: 100%;
 
   p:first-child {
@@ -29,7 +43,13 @@ const Container = styled.div`
  * Container for the image.
  */
 const ContainerImage = styled.div`
-  flex-basis: 50%;
+  ${mobileBreakpoint`
+    flex-basis: 100%;
+  `}
+
+  ${tabletAndDesktopBreakpoint`
+    flex-basis: 50%;
+  `}
 `;
 
 /**
@@ -41,23 +61,37 @@ const Image = styled.img`
 `;
 
 /**
- * Container for the description.
- */
-const ContainerDescription = styled.div`
-  flex-basis: 50%;
-  padding: 5px 15px;
-  padding-top: 0;
-`;
-
-/**
  * Container for the Project Name.
  */
 const ContainerProjectName = styled.div`
-  text-align: left;
+  ${mobileBreakpoint`
+    text-align: center;
+  `}
+
+  ${tabletAndDesktopBreakpoint`
+    text-align: left;
+  `}
+
   margin-bottom: 10px;
 
   font-family: 'Zen Maru Gothic Black';
   font-size: 1.2rem;
+`;
+
+/**
+ * Container for the description.
+ */
+const ContainerDescription = styled.div`
+  ${mobileBreakpoint`
+    flex-basis: 100%;
+  `}
+
+  ${tabletAndDesktopBreakpoint`
+    flex-basis: 50%;
+  `}
+
+  padding: 5px 15px;
+  padding-top: 0;
 `;
 
 /**
