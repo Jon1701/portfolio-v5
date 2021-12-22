@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { useSwipeable } from 'react-swipeable';
 
 import PreviousNextButtons from './components/PreviousNextButtons';
 
@@ -28,6 +29,8 @@ const ContainerImage = styled.div`
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+
+  touch-action: pan-y;
 `;
 
 /**
@@ -75,6 +78,12 @@ const ImageCarousel = ({ images }) => {
     setCurrentImageIndex(newIndex);
   };
 
+  // React-Swipeable hook.
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: handleGoToNextImage,
+    onSwipedRight: handleGoToPreviousImage,
+  });
+
   return (
     <Container>
       {images.length > 1 ? (
@@ -92,7 +101,7 @@ const ImageCarousel = ({ images }) => {
         </React.Fragment>
       ) : null}
 
-      <ContainerImage>
+      <ContainerImage {...swipeHandlers}>
         <Image
           src={images[currentImageIndex].src}
           draggable="false"
