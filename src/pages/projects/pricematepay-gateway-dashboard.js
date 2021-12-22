@@ -3,7 +3,12 @@ import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import { Page, Margin } from '_templates/Pages/Project';
-import { Section, H1, H2 } from '_templates/Sections/ProjectPage';
+import {
+  Section,
+  H1,
+  H2,
+  TechnologiesGrid,
+} from '_templates/Sections/ProjectPage';
 import { TechnologyLogo, technologyEnums } from '_components/TechnologyLogo';
 import GlobalStyle from '_styles/Global';
 import ImageCarousel from '_components/ImageCarousel';
@@ -17,16 +22,6 @@ const ContainerGrid = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-`;
-
-/**
- * Grid of technologies.
- */
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 75px 75px 75px 75px 75px 75px;
-  column-gap: 15px;
-  row-gap: 15px;
 `;
 
 // Images to be displayed in the carousel.
@@ -1647,7 +1642,9 @@ const PricematepayGatewayDashboardProjectDetailsPage = () => (
 
     <Margin>
       <Section>
-        <H1 textAlign="center">Pricematepay Gateway Dashboard</H1>
+        <H1 textAlign="center" marginTop="0px">
+          Pricematepay Gateway Dashboard
+        </H1>
       </Section>
 
       <Section>
@@ -1668,7 +1665,7 @@ const PricematepayGatewayDashboardProjectDetailsPage = () => (
         <H2>Technologies Used</H2>
 
         <ContainerGrid>
-          <Grid>
+          <TechnologiesGrid>
             {technologiesUsed.map(item => (
               <TechnologyLogo
                 key={item}
@@ -1677,7 +1674,7 @@ const PricematepayGatewayDashboardProjectDetailsPage = () => (
                 maxIconHeight="50px"
               />
             ))}
-          </Grid>
+          </TechnologiesGrid>
         </ContainerGrid>
       </Section>
 
