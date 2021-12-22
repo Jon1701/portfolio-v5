@@ -93,7 +93,11 @@ const ImageCarousel = ({ images }) => {
       ) : null}
 
       <ContainerImage>
-        <Image src={images[currentImageIndex].src} />
+        <Image
+          src={images[currentImageIndex].src}
+          draggable="false"
+          loading="lazy"
+        />
       </ContainerImage>
 
       {images.length > 1 ? (
