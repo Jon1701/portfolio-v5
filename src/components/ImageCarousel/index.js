@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -52,16 +52,10 @@ const ImageCarousel = ({ images }) => {
   // Tracks the index of the currently displayed image.
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Ref to the buttons
-  const refToButtons = useRef(null);
-
   /**
    * Goes to the previous image.
    */
   const handleGoToPreviousImage = () => {
-    // Scroll to the Previous/Next buttons.
-    refToButtons.current.scrollIntoView();
-
     // Get new index.
     const newIndex =
       currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1;
@@ -74,9 +68,6 @@ const ImageCarousel = ({ images }) => {
    * Goes to the next image.
    */
   const handleGoToNextImage = () => {
-    // Scroll to the Previous/Next buttons.
-    refToButtons.current.scrollIntoView();
-
     // Get new index.
     const newIndex = (currentImageIndex + 1) % images.length;
 
@@ -89,7 +80,6 @@ const ImageCarousel = ({ images }) => {
       {images.length > 1 ? (
         <React.Fragment>
           <PreviousNextButtons
-            ref={refToButtons}
             previousImage={handleGoToPreviousImage}
             nextImage={handleGoToNextImage}
           />
