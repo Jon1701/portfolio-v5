@@ -85,7 +85,22 @@ const ImageCarousel = ({ images }) => {
   });
 
   return (
-    <Container>
+    <Container
+      onKeyDown={e => {
+        switch (e.code) {
+          case 'ArrowLeft':
+            handleGoToPreviousImage();
+            break;
+
+          case 'ArrowRight':
+            handleGoToNextImage();
+            break;
+
+          default:
+            break;
+        }
+      }}
+      tabIndex="0">
       {images.length > 1 ? (
         <React.Fragment>
           <PreviousNextButtons
