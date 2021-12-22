@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Section, Margin, H2 } from '_templates/Sections/MainPage';
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
+import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
+import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
 
 import Technologies from './components/Technologies';
 
@@ -29,12 +32,22 @@ const ContainerGrid = styled.div`
  */
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 80px 80px 80px 80px 80px 80px;
-  grid-gap: 10px;
-`;
 
-// Icon height.
-const iconHeight = '50px';
+  ${mobileBreakpoint`
+    grid-template-columns: 80px 80px 80px;
+    grid-gap: 15px;
+  `}
+
+  ${tabletBreakpoint`
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+  `}
+
+  ${desktopBreakpoint`
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+  `}
+`;
 
 /**
  * About Me Section.
@@ -58,7 +71,7 @@ const AboutMeSection = () => (
 
       <ContainerGrid>
         <Grid>
-          <Technologies iconHeight={iconHeight} />
+          <Technologies />
         </Grid>
       </ContainerGrid>
     </Margin>
