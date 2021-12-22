@@ -18,8 +18,6 @@ const Main = styled.main`
   background-attachment: fixed;
 
   color: #fff;
-
-  min-height: 100vh;
 `;
 
 /**
