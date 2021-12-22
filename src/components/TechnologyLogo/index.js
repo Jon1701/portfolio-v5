@@ -34,19 +34,22 @@ import SVGWordPress from '_images/svg/wordpress.svg';
 /**
  * Component container.
  */
-const Container = styled.span`
-  text-align: center;
-`;
+const Container = styled.span``;
 
 /**
  * Container for the SVG.
  */
-const ContainerSVG = styled.div``;
+const ContainerSVG = styled.div`
+  text-align: center;
+`;
 
 /**
  * Technology name.
  */
-const ContainerName = styled.div``;
+const ContainerName = styled.div`
+  text-align: center;
+  word-break: break-word;
+`;
 
 /**
  * Custom image component.
