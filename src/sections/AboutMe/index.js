@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Section, Margin, H2 } from '_templates/Sections/MainPage';
-import ExternalLink from '_components/Links/ExternalLink';
 
 import Technologies from './components/Technologies';
 
@@ -51,15 +50,8 @@ const AboutMeSection = () => (
 
       <p>
         My interest in web development began in 2016, and since then, I have had
-        the privilege of working at two startups: a{' '}
-        <ExternalLink href="https://www.linkedin.com/company/navigate-technologies-inc/about/">
-          Software as a Service incubator startup
-        </ExternalLink>
-        , as well as a{' '}
-        <ExternalLink href="https://www.linkedin.com/company/pricematepay">
-          Payment Processor startup
-        </ExternalLink>
-        .
+        the privilege of working at two startups: a Software as a Service
+        incubator startup, as well as a Payment Processor startup.
       </p>
 
       <p>Here are some of the technologies I have used throughout my career:</p>
