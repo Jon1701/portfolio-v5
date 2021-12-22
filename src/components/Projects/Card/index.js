@@ -115,7 +115,7 @@ const ContainerLinkButton = styled.div`
 const ProjectCard = ({ name, imageSrc, urlToProjectDetailsPage, children }) => (
   <Container>
     <ContainerImage>
-      <Image src={imageSrc} alt={name} />
+      <Image src={imageSrc} alt={name} draggable="false" />
     </ContainerImage>
     <ContainerDescription>
       <ContainerProjectName>{name}</ContainerProjectName>
