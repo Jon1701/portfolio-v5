@@ -117,11 +117,7 @@ const ImageCarousel = ({ images }) => {
       ) : null}
 
       <ContainerImage {...swipeHandlers}>
-        <Image
-          src={images[currentImageIndex].src}
-          draggable="false"
-          loading="lazy"
-        />
+        <Image src={images[currentImageIndex].src} draggable="false" />
       </ContainerImage>
 
       {images.length > 1 ? (
