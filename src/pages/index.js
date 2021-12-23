@@ -32,7 +32,7 @@ const scrollIntoViewOptions = {
  *
  * @returns {React.Component} Index page.
  */
-const IndexPage = () => {
+const IndexPage = props => {
   // Refs to sections.
   const refLandingSection = useRef(null);
   const refAboutMeSection = useRef(null);
@@ -44,6 +44,7 @@ const IndexPage = () => {
    */
   const scrollToAboutMeSection = () => {
     refAboutMeSection.current.scrollIntoView(scrollIntoViewOptions);
+    window.history.pushState({}, '', '/');
   };
 
   /**
@@ -51,6 +52,7 @@ const IndexPage = () => {
    */
   const scrollToWorkExperienceSection = () => {
     refWorkExperienceSection.current.scrollIntoView(scrollIntoViewOptions);
+    window.history.pushState({}, '', '/');
   };
 
   /**
@@ -58,6 +60,7 @@ const IndexPage = () => {
    */
   const scrollToProjectsSection = () => {
     refProjectsSection.current.scrollIntoView(scrollIntoViewOptions);
+    window.history.pushState({}, '', '/');
   };
 
   return (
