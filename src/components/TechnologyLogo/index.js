@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import SVGAutoprefixer from '_images/svg/autoprefixer.svg';
 import SVGBabel from '_images/svg/babel.svg';
 import SVGChartJS from '_images/svg/chartjs.svg';
 import SVGCSS3 from '_images/svg/css3.svg';
@@ -65,6 +66,7 @@ const Image = styled.img`
 
 // Accepted enums.
 const enums = Object.freeze({
+  autoprefixer: 'autoprefixer',
   babel: 'babel',
   chartjs: 'chartjs',
   css3: 'css3',
@@ -100,6 +102,10 @@ const enums = Object.freeze({
 // Defines the path to the SVG and the technology name
 // associated with a technology enum.
 const definitions = {
+  [enums.autoprefixer]: {
+    src: SVGAutoprefixer,
+    name: 'Autoprefixer',
+  },
   [enums.babel]: {
     src: SVGBabel,
     name: 'Babel',
