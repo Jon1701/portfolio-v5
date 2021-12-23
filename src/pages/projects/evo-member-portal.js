@@ -106,12 +106,14 @@ const technologiesUsed = [
   technologyEnums.chartjs,
   technologyEnums.sass,
   technologyEnums.postcss,
+  technologyEnums.autoprefixer,
   technologyEnums.eslint,
   technologyEnums.stylelint,
   technologyEnums.docker,
   technologyEnums.webpack,
   technologyEnums.babel,
   technologyEnums.mocha,
+  technologyEnums.chaijs,
   technologyEnums.git,
 ];
 
