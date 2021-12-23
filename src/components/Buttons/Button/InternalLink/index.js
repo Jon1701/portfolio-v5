@@ -16,6 +16,8 @@ const CustomLink = styled(Link)`
 
   text-decoration: none;
 
+  cursor: pointer;
+
   &:hover {
     background-color: #a40f2d;
     transition: all 0.2s 0s ease-in-out;
