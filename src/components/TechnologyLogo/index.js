@@ -19,6 +19,7 @@ import SVGMocha from '_images/svg/mocha.svg';
 import SVGMySQL from '_images/svg/mysql.svg';
 import SVGNodeJS from '_images/svg/nodejs.svg';
 import SVGPHP from '_images/svg/php.svg';
+import SVGPHPUnit from '_images/svg/phpunit.svg';
 import SVGPostCSS from '_images/svg/postcss.svg';
 import SVGPrettier from '_images/svg/prettier.svg';
 import SVGReact from '_images/svg/react.svg';
@@ -82,6 +83,7 @@ const enums = Object.freeze({
   mysql: 'mysql',
   node: 'node',
   php: 'php',
+  phpunit: 'phpunit',
   postcss: 'postcss',
   prettier: 'prettier',
   react: 'react',
@@ -169,6 +171,10 @@ const definitions = {
   [enums.php]: {
     src: SVGPHP,
     name: 'PHP',
+  },
+  [enums.phpunit]: {
+    src: SVGPHPUnit,
+    name: 'PHPUnit',
   },
   [enums.postcss]: {
     src: SVGPostCSS,
