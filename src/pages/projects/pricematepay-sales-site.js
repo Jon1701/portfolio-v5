@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import { Page, Margin } from '_templates/Pages/Project';
+import {
+  Page,
+  Margin,
+  ReturnToProjectsSectionLink,
+} from '_templates/Pages/Project';
 import {
   Section,
   H1,
@@ -224,6 +228,8 @@ const PricematepaySalesSiteProjectDetailsPage = () => (
 
         <ImageCarousel images={images} />
       </Section>
+
+      <ReturnToProjectsSectionLink />
     </Margin>
   </Page>
 );
