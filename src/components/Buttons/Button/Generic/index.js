@@ -36,7 +36,6 @@ const GenericButton = ({ children, ...rest }) => (
 );
 
 GenericButton.propTypes = {
-  to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
 
