@@ -22,7 +22,7 @@ const CustomH2 = styled(H2)`
  */
 const WorkExperienceSection = React.forwardRef(
   ({ scrollToProjectsSection }, ref) => (
-    <Section minHeight="100vh" ref={ref}>
+    <Section minHeight="100vh" ref={ref} id="work-experience">
       <Margin>
         <CustomH2>Work Experience</CustomH2>
 

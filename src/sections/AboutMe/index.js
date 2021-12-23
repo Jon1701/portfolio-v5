@@ -57,7 +57,7 @@ const Grid = styled.div`
  */
 const AboutMeSection = React.forwardRef(
   ({ scrollToWorkExperienceSection }, ref) => (
-    <Section minHeight="100vh" ref={ref}>
+    <Section minHeight="100vh" ref={ref} id="about-me">
       <Margin>
         <CustomH2>About Me</CustomH2>
 

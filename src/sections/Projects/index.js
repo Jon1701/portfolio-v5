@@ -23,7 +23,7 @@ const CustomH2 = styled(H2)`
  * @returns {React.Component} Section.
  */
 const ProjectsSection = React.forwardRef((props, ref) => (
-  <Section minHeight="100vh" ref={ref}>
+  <Section minHeight="100vh" ref={ref} id="projects">
     <Margin>
       <CustomH2>Projects</CustomH2>
 
