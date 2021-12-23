@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { TechnologyLogo, technologyEnums } from '_components/TechnologyLogo';
 
@@ -29,21 +28,11 @@ const arrayTechnologiesUsed = [
 /**
  * Generate a table of technologies used.
  *
- * @param {object} props Component props.
  * @returns {React.Component} Table of technologies used.
  */
-const Technologies = ({ iconHeight }) =>
+const Technologies = () =>
   arrayTechnologiesUsed.map(item => (
-    <TechnologyLogo
-      key={item}
-      technologyEnum={item}
-      iconHeight={iconHeight}
-      maxIconHeight={iconHeight}
-    />
+    <TechnologyLogo key={item} technologyEnum={item} />
   ));
-
-Technologies.propTypes = {
-  iconHeight: PropTypes.string.isRequired,
-};
 
 export default Technologies;
