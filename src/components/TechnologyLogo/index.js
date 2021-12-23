@@ -251,6 +251,7 @@ const TechnologyLogo = ({ technologyEnum, iconHeight, maxIconHeight }) => (
         alt={definitions[technologyEnum].name}
         iconHeight={iconHeight}
         maxIconHeight={maxIconHeight}
+        draggable="false"
       />
     </ContainerSVG>
     <ContainerName>{definitions[technologyEnum].name}</ContainerName>
