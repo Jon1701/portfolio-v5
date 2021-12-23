@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import SVGAutoprefixer from '_images/svg/autoprefixer.svg';
 import SVGBabel from '_images/svg/babel.svg';
+import SVGChaiJS from '_images/svg/chaijs.svg';
 import SVGChartJS from '_images/svg/chartjs.svg';
 import SVGCSS3 from '_images/svg/css3.svg';
 import SVGDebian from '_images/svg/debian.svg';
@@ -68,6 +69,7 @@ const Image = styled.img`
 const enums = Object.freeze({
   autoprefixer: 'autoprefixer',
   babel: 'babel',
+  chaijs: 'chaijs',
   chartjs: 'chartjs',
   css3: 'css3',
   debian: 'debian',
@@ -109,6 +111,10 @@ const definitions = {
   [enums.babel]: {
     src: SVGBabel,
     name: 'Babel',
+  },
+  [enums.chaijs]: {
+    src: SVGChaiJS,
+    name: 'Chai.js',
   },
   [enums.chartjs]: {
     src: SVGChartJS,
