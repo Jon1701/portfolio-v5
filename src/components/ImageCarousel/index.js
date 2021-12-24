@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { useSwipeable } from 'react-swipeable';
@@ -58,25 +58,48 @@ const ImageCarousel = ({ images }) => {
   /**
    * Goes to the previous image.
    */
-  const handleGoToPreviousImage = () => {
+  const handleGoToPreviousImage = useCallback(() => {
     // Get new index.
     const newIndex =
       currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1;
 
     // Set new index.
     setCurrentImageIndex(newIndex);
-  };
+  }, [currentImageIndex]);
 
   /**
    * Goes to the next image.
    */
-  const handleGoToNextImage = () => {
+  const handleGoToNextImage = useCallback(() => {
     // Get new index.
     const newIndex = (currentImageIndex + 1) % images.length;
 
     // Set new index.
     setCurrentImageIndex(newIndex);
-  };
+  }, [currentImageIndex]);
+
+  /**
+   * Handles the Key Down event.
+   *
+   * @param {React.SyntheticEvent} e React Event.
+   */
+  const handleKeyDown = useCallback(
+    e => {
+      switch (e.code) {
+        case 'ArrowLeft':
+          handleGoToPreviousImage();
+          break;
+
+        case 'ArrowRight':
+          handleGoToNextImage();
+          break;
+
+        default:
+          break;
+      }
+    },
+    [currentImageIndex]
+  );
 
   // React-Swipeable hook.
   const swipeHandlers = useSwipeable({
@@ -85,22 +108,7 @@ const ImageCarousel = ({ images }) => {
   });
 
   return (
-    <Container
-      onKeyDown={e => {
-        switch (e.code) {
-          case 'ArrowLeft':
-            handleGoToPreviousImage();
-            break;
-
-          case 'ArrowRight':
-            handleGoToNextImage();
-            break;
-
-          default:
-            break;
-        }
-      }}
-      tabIndex="0">
+    <Container onKeyDown={handleKeyDown} tabIndex="0">
       {images.length > 1 ? (
         <React.Fragment>
           <PreviousNextButtons
