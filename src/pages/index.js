@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useCallback } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
@@ -42,26 +42,26 @@ const IndexPage = props => {
   /**
    * Scrolls to the About Me section.
    */
-  const scrollToAboutMeSection = () => {
+  const scrollToAboutMeSection = useCallback(() => {
     refAboutMeSection.current.scrollIntoView(scrollIntoViewOptions);
     window.history.pushState({}, '', '/');
-  };
+  }, []);
 
   /**
    * Scrolls to the Work Experience section.
    */
-  const scrollToWorkExperienceSection = () => {
+  const scrollToWorkExperienceSection = useCallback(() => {
     refWorkExperienceSection.current.scrollIntoView(scrollIntoViewOptions);
     window.history.pushState({}, '', '/');
-  };
+  }, []);
 
   /**
    * Scrolls to the Projects section.
    */
-  const scrollToProjectsSection = () => {
+  const scrollToProjectsSection = useCallback(() => {
     refProjectsSection.current.scrollIntoView(scrollIntoViewOptions);
     window.history.pushState({}, '', '/');
-  };
+  }, []);
 
   return (
     <Main>
