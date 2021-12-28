@@ -5,17 +5,18 @@ import { Helmet } from 'react-helmet';
 import AboutMeSection from '_sections/AboutMe';
 import FooterSection from '../sections/Footer';
 import GlobalStyle from '_styles/Global';
-import HIXSPatternEvolution from '_images/patterns/hixs_pattern_evolution.png';
 import LandingSection from '_sections/Landing';
 import ProjectsSection from '_sections/Projects';
 import WorkExperienceSection from '_sections/WorkExperience';
+import WP1851978 from '_images/wallpapers/wp1851978-polygon-wallpapers.png';
 
 /**
  * Component container.
  */
 const Main = styled.main`
-  background-image: url(${HIXSPatternEvolution});
+  background-image: url(${WP1851978});
   background-attachment: fixed;
+  background-size: cover;
 
   color: #fff;
 `;

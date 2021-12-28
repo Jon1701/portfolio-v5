@@ -2,17 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
-import HIXSEvolutionPattern from '_images/patterns/hixs_pattern_evolution.png';
 import InternalLink from '_components/Links/InternalLink';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
 import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
+import WP1851977 from '_images/wallpapers/wp1851977-polygon-wallpapers.png';
 
 /**
  * Page template.
  */
 const Page = styled.main`
-  background-image: url(${HIXSEvolutionPattern});
+  background-image: url(${WP1851977});
   background-attachment: fixed;
+  background-size: cover;
+
   padding-top: 35px;
   padding-bottom: 100px;
 
