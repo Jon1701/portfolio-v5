@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.jonbalon.com',
-    title: 'Jon Balon - Modern JavaScript Developer',
+    title: 'Jon Balon - Front-End Web Developer',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'src/images/favicon.png',
       },
     },
     'gatsby-plugin-sharp',
