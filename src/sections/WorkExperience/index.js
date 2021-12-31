@@ -35,16 +35,16 @@ const WorkExperienceSection = React.forwardRef(
           <ul>
             <li>
               Built the front-end for the Pricematepay Gateway API which
-              faciliated accepting credit card payments and issuing refunds for
-              organizations from customers.
+              facilitated accepting credit card payments and issuing refunds for
+              organizations from customers
             </li>
             <li>
-              Organizations could create branded Invoices and have them emailed
-              to customers.
+              Organizations could create branded Invoices email them to
+              customers
             </li>
             <li>
               Customers could pay Hosted Invoices without the need for an
-              account.
+              account
             </li>
             <li>
               Also built the Pricematepay Sales Site to help the Sales team
@@ -63,18 +63,18 @@ const WorkExperienceSection = React.forwardRef(
             <li>
               Collaborated with a team of developers to build the EVO WordPress
               SEO Plugin which allowed users to easily manage SEO for their
-              WordPress web properties.
+              WordPress web properties
             </li>
             <li>
               Also collaborated to develop the EVO Member Portal where users
               could manage and purchase subscription keys for their sites using
               the plugin so that they may take advantage of features such as
-              Google Search Console and Google Analytics integrations.
+              Google Search Console and Google Analytics integrations
             </li>
             <li>
               Worked on various smaller projects for external clients such as
               building the temporary website for Navigate Group, modifying the
-              Magento front-end for the GlasVapor storefront, prevent hot
+              Magento front-end for the GlasVapor storefront, preventing hot
               linking of resources from outside the Hloom domain, and building
               the website for THIRTY SIX KNOTS
             </li>
@@ -84,8 +84,8 @@ const WorkExperienceSection = React.forwardRef(
               coding styles between multiple developers
             </li>
             <li>
-              Wrote tests for the Mocha, Jest, and PHPUnit testing frameworks to
-              ensure code was accurate, and prevent regressions from future
+              Wrote tests using the Mocha, Jest, and PHPUnit testing frameworks
+              to ensure code was accurate, and prevent regressions from future
               iterations upon the codebase
             </li>
             <li>
