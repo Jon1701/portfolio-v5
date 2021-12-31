@@ -1,25 +1,13 @@
 import React, { useRef, useCallback } from 'react';
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
+import { Page } from '_templates/Pages/Home';
 import AboutMeSection from '_sections/AboutMe';
 import FooterSection from '../sections/Footer';
 import GlobalStyle from '_styles/Global';
 import LandingSection from '_sections/Landing';
 import ProjectsSection from '_sections/Projects';
 import WorkExperienceSection from '_sections/WorkExperience';
-import WP1851978 from '_images/wallpapers/wp1851978-polygon-wallpapers.png';
-
-/**
- * Component container.
- */
-const Main = styled.main`
-  background-image: url(${WP1851978});
-  background-attachment: fixed;
-  background-size: cover;
-
-  color: #fff;
-`;
 
 // Options for the scrollIntoView function.
 const scrollIntoViewOptions = {
@@ -33,7 +21,7 @@ const scrollIntoViewOptions = {
  *
  * @returns {React.Component} Index page.
  */
-const IndexPage = props => {
+const HomePage = props => {
   // Refs to sections.
   const refLandingSection = useRef(null);
   const refAboutMeSection = useRef(null);
@@ -65,7 +53,7 @@ const IndexPage = props => {
   }, []);
 
   return (
-    <Main>
+    <Page>
       <Helmet>
         <title>Jon Balon &mdash; Front-End Web Developer</title>
       </Helmet>
@@ -85,8 +73,8 @@ const IndexPage = props => {
       />
       <ProjectsSection ref={refProjectsSection} />
       <FooterSection />
-    </Main>
+    </Page>
   );
 };
 
-export default IndexPage;
+export default HomePage;
