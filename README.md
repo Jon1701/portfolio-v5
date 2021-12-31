@@ -46,4 +46,6 @@ The following `make` targets are available:
 - `make copy-project-screenshots` to copy project screenshots to the build folder
 - `make dev` to start the Development server for local rapid iteration
 - `make staging` to start the Staging server for local testing before deployment
+- `make dev-all` to start the Development server which accepts connections from all devices on the network
+- `make staging-all` to start the Staging server which accepts connections from all devices on the network
 - `make clean` to clean generated artifacts

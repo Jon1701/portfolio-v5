@@ -28,14 +28,28 @@ dev:
 	@echo "Starting the Development server..."
 	@${PATH_NODE_MODULES_BIN}/gatsby develop \
 		--port ${PORT_DEV_SERVER}
-	@echo "Done starting the Development server"
+
+# Starts the local Development server and allow connections from all devices
+# on the network.
+dev-all:
+	@echo "Starting the Development server..."
+	@${PATH_NODE_MODULES_BIN}/gatsby develop \
+	  --host 0.0.0.0 \
+		--port ${PORT_DEV_SERVER}
 
 # Starts the local Staging server.
 staging:
 	@echo "Starting the Staging server..."
 	@${PATH_NODE_MODULES_BIN}/gatsby serve \
 		--port ${PORT_STAGING_SERVER}
-	@echo "Done starting the Staging server"
+
+# Starts the local Staging server and allow connections from all devices
+# on the network.
+staging-all:
+	@echo "Starting the Staging server..."
+	@${PATH_NODE_MODULES_BIN}/gatsby serve \
+	  --host 0.0.0.0 \
+		--port ${PORT_STAGING_SERVER}
 
 # Cleans generated artifacts.
 clean:
