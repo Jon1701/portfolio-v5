@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Margin } from '_templates/Pages/Home';
-import { Section, H2 } from '_templates/Sections/MainPage';
+import { Section, H2 } from '_templates/Sections/HomePage';
 import GenericButton from '_components/Buttons/Button/Generic';
 import LogoMansfield from '_images/logo/mansfield.jpg';
 import LogoNavigateTechnologies from '_images/logo/navigate-technologies.jpg';

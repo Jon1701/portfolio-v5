@@ -17,9 +17,9 @@ const scrollIntoViewOptions = {
 };
 
 /**
- * Index page.
+ * Home page.
  *
- * @returns {React.Component} Index page.
+ * @returns {React.Component} Home page.
  */
 const HomePage = props => {
   // Refs to sections.

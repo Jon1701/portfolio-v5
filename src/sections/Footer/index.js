@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { H2 } from '_templates/Sections/MainPage';
+import { H2 } from '_templates/Sections/HomePage';
 import { Margin } from '_templates/Pages/Home';
 import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
 import GitHubIcon from '_images/icons/GitHub';
