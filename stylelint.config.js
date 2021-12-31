@@ -6,4 +6,9 @@ module.exports = {
     'stylelint-config-standard-scss',
     'stylelint-config-prettier',
   ],
+  rules: {
+    'declaration-empty-line-before': null,
+    'value-keyword-case': null,
+    'no-empty-source': null,
+  },
 };
