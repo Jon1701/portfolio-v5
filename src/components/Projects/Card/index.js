@@ -74,7 +74,7 @@ const ContainerProjectName = styled.div`
 
   margin-bottom: 10px;
 
-  font-family: 'Zen Maru Gothic Black';
+  font-family: 'Zen Maru Gothic Black', sans-serif;
   font-size: 1.2rem;
 `;
 
