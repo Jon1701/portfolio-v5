@@ -65,7 +65,7 @@ const ImageCarousel = ({ images }) => {
 
     // Set new index.
     setCurrentImageIndex(newIndex);
-  }, [currentImageIndex]);
+  }, [currentImageIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   /**
    * Goes to the next image.
@@ -76,7 +76,7 @@ const ImageCarousel = ({ images }) => {
 
     // Set new index.
     setCurrentImageIndex(newIndex);
-  }, [currentImageIndex]);
+  }, [currentImageIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   /**
    * Handles the Key Down event.
@@ -98,7 +98,7 @@ const ImageCarousel = ({ images }) => {
           break;
       }
     },
-    [currentImageIndex]
+    [currentImageIndex] // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   // React-Swipeable hook.
