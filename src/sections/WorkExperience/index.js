@@ -36,20 +36,13 @@ const WorkExperienceSection = React.forwardRef(
           <ul>
             <li>
               Built the front-end for the Pricematepay Gateway API which
-              facilitated accepting credit card payments and issuing refunds for
-              organizations from customers
+              facilitated accepting credit card payments, issuing refunds for
+              organizations from customers, as well as sending Hosted Invoices
+              to customers
             </li>
             <li>
-              Organizations could create branded Invoices email them to
-              customers
-            </li>
-            <li>
-              Customers could pay Hosted Invoices without the need for an
-              account
-            </li>
-            <li>
-              Also built the Pricematepay Sales Site to help the Sales team
-              acquire new clients for Pricematepay
+              Built the Pricematepay Sales Site to help the Sales team acquire
+              new clients for Pricematepay
             </li>
           </ul>
         </WorkExperienceEntry>
