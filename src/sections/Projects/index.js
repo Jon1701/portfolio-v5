@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Section, Margin, H2 } from '_templates/Sections/MainPage';
+import { Margin } from '_templates/Pages/Home';
+import { Section, H2 } from '_templates/Sections/MainPage';
 import CardImageEVOMemberPortal from '_images/projects/evo-member-portal/card-image.png';
 import CardImageEVOPlugin from '_images/projects/evo-plugin/card-image.png';
 import CardImageEVOWebsite from '_images/projects/evo-website/card-image.png';

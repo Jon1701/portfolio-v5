@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Section, Margin, H2 } from '_templates/Sections/MainPage';
+import { Margin } from '_templates/Pages/Home';
+import { Section, H2 } from '_templates/Sections/MainPage';
 import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
 import GenericButton from '_components/Buttons/Button/Generic';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';

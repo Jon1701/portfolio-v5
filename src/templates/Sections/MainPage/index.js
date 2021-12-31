@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
-import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
-import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
-
 /**
  * Section component.
  *
@@ -23,29 +19,6 @@ Section.propTypes = {
 Section.defaultProps = {
   minHeight: 'auto',
 };
-
-/**
- * Section margin.
- */
-const Margin = styled.div`
-  ${mobileBreakpoint`
-    margin-left: 10px;
-    margin-right: 10px;
-  `}
-
-  ${tabletBreakpoint`
-    margin-left: 50px;
-    margin-right: 50px;
-  `}
-
-  ${desktopBreakpoint`
-    max-width: 900px;
-    margin: 0 auto;
-  `}
-
-  padding-top: 35px;
-  padding-bottom: 35px;
-`;
 
 /**
  * Heading level 1.
@@ -89,4 +62,4 @@ const H6 = styled.h6`
   font-size: 0.7em;
 `;
 
-export { Section, Margin, H1, H2, H3, H4, H5, H6 };
+export { Section, H1, H2, H3, H4, H5, H6 };

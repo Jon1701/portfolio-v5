@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Margin, H2 } from '_templates/Sections/MainPage';
+import { H2 } from '_templates/Sections/MainPage';
+import { Margin } from '_templates/Pages/Home';
+import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
 import GitHubIcon from '_images/icons/GitHub';
 import LinkedInIcon from '_images/icons/LinkedIn';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
 import tabletBreakpoint from '_util/responsiveDesign/tabletBreakpoint';
-import desktopBreakpoint from '_util/responsiveDesign/desktopBreakpoint';
 
 import ExternalLink from './components/ExternalLink';
 
