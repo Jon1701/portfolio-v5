@@ -5,7 +5,6 @@ import { Section, Margin, H2 } from '_templates/Sections/MainPage';
 import CardImageEVOMemberPortal from '_images/projects/evo-member-portal/card-image.png';
 import CardImageEVOPlugin from '_images/projects/evo-plugin/card-image.png';
 import CardImageEVOWebsite from '_images/projects/evo-website/card-image.png';
-//import CardImageNavigateGroupWebsite from '_images/projects/navigate-group-website/card-image.png';
 import CardImagePricematepayDashboard from '_images/projects/pricematepay-dashboard/card-image.png';
 import CardImagePricematepayWebsite from '_images/projects/pricematepay-website/card-image.png';
 import ProjectCard from '_components/Projects/Card';
@@ -68,14 +67,6 @@ const ProjectsSection = React.forwardRef((props, ref) => (
         evoplugin.com served as a product page for the EVO WordPress SEO plugin
         and the EVO SEO Member Portal.
       </ProjectCard>
-
-      {/* <ProjectCard
-        name="Navigate Group Website"
-        imageSrc={CardImageNavigateGroupWebsite}
-        urlToProjectDetailsPage="/projects/navigate-group-website">
-        navigategroup.com is the website for Navigate Group, a sister company to
-        the now defunct Navigate Technologies.
-      </ProjectCard> */}
     </Margin>
   </Section>
 ));

@@ -17,10 +17,6 @@ const pathToEVOPluginScreenshots =
 // Path to the EVO Website screenshots folder.
 const pathToEVOWebsiteScreenshots = '/static/ProjectScreenshots/EVO Website';
 
-// Path to the Navigate Group Website screenshots folder.
-const pathToNavGroupWebsiteScreenshots =
-  '/static/ProjectScreenshots/Navigate Group Website';
-
 // Assets lookup object.
 const db = {
   'ProjectScreenshot-PMPSalesSite-DesktopDesign-Home': {
@@ -136,11 +132,6 @@ const db = {
   'ProjectScreenshot-PMPSalesSite-TabletDesign-Company-AboutUs': {
     urls: {
       publicStatic: `${pathToPricematepaySalesSiteScreenshots}/Tablet/Company - About Us.png`,
-    },
-  },
-  'ProjectScreenshot-NavGroupWebsite-Home': {
-    urls: {
-      publicStatic: `${pathToNavGroupWebsiteScreenshots}/Homepage.png`,
     },
   },
   'ProjectScreenshot-EVOWebsite-Contact': {
