@@ -38,6 +38,60 @@ In order to display a carousel of project screenshots, they need to be copied fr
    $ echo ${WORK_PROJECTS_FOLDER}
    ```
 
+## Set Up Deployment Environment
+
+1. Create a [Personal Access Token](https://github.com/settings/tokens/new)
+
+2. Set **Note** to:
+
+   ```
+   gh-pages deployment
+   ```
+
+3. Set **Expiration** to:
+
+   ```
+   30 days
+   ```
+
+4. For **Select scopes**, make sure the following are the _ONLY_ ones checked:
+
+   - `public_repo`
+
+5. Click on **Generate token**
+
+6. Copy the token to clipboard
+
+7. In a terminal window, open your shell configuration file:
+
+   - For `bash`, use `~/.bashrc`
+   - For `zsh`, use `~/.zshrc`
+
+8. Add the following exported variable to the bottom of the file
+
+   ```
+   export GITHUB_PERSONAL_ACCESS_TOKEN_DEPLOY_GH_PAGES=
+   ```
+
+9. Save and close the editor
+
+10. Reload your shell configuration file (or close and reopen all open shells):
+
+- For `bash`, use `source ~/.bashrc`
+- For `zsh`, use `source ~/.zshrc`
+
+11. Verify exported value:
+
+    ```
+    $ echo ${GITHUB_PERSONAL_ACCESS_TOKEN_DEPLOY_GH_PAGES}
+    ```
+
+12. Deploy using the command:
+
+    ```
+    make deploy
+    ```
+
 ## Commands
 
 The following `make` targets are available:
@@ -50,3 +104,6 @@ The following `make` targets are available:
 - `make dev-all` to start the Development server which accepts connections from all devices on the network
 - `make staging-all` to start the Staging server which accepts connections from all devices on the network
 - `make clean` to clean generated artifacts
+- `make deploy` to deploy the site to the GitHub Pages repository
+- `make check-is-master-branch` to check if the current branch is `master`
+- `make generate-cname` to generate a CNAME file into the build folder

@@ -103,7 +103,7 @@ check-is-master-branch:
 generate-cname:
 	@echo Generating CNAME...
 	@echo ${DEPLOYMENT_CANONICAL_URL} > ./public/CNAME
-	@echo Done generateing CNAME
+	@echo Done generating CNAME
 
 # Deploy to GitHub Pages.
 deploy: check-is-master-branch clean install build generate-cname copy-project-screenshots
