@@ -73,11 +73,11 @@ const LandingSection = React.forwardRef(({ scrollToAboutMeSection }, ref) => (
     <Margin>
       <Name>Jon Balon</Name>
 
-      <Position>Front-End Web Developer</Position>
+      <Position>Modern JavaScript Developer</Position>
 
       <Tagline>
-        I am a Front-End Web Developer who builds modern web applications with
-        the latest technologies.
+        I am a Modern JavaScript Developer who builds modern web applications
+        with the latest technologies.
       </Tagline>
 
       <div style={{ marginTop: '25px' }}>

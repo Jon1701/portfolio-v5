@@ -55,7 +55,7 @@ const HomePage = props => {
   return (
     <Page>
       <Helmet>
-        <title>Jon Balon &mdash; Front-End Web Developer</title>
+        <title>Jon Balon &mdash; Modern JavaScript Developer</title>
       </Helmet>
       <GlobalStyle />
 
