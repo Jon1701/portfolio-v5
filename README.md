@@ -107,3 +107,4 @@ The following `make` targets are available:
 - `make deploy` to deploy the site to the GitHub Pages repository
 - `make check-is-master-branch` to check if the current branch is `master`
 - `make generate-cname` to generate a CNAME file into the build folder
+- `make audit` to check for security vulnerabilities

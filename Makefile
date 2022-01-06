@@ -114,3 +114,9 @@ deploy: check-is-master-branch clean install build generate-cname copy-project-s
 	--message 'This is an auto-generated commit' \
 	--repo https://${GITHUB_PERSONAL_ACCESS_TOKEN_DEPLOY_GH_PAGES}@github.com/Jon1701/${DEPLOYMENT_REPO_NAME}
 	@echo "Done deploying site"
+
+# Checks for known security vulnerabilities.
+audit:
+	@echo Checking for security vulnerabilities...
+	@npm audit --production
+	@echo Done checking for security vulnerabilities
