@@ -23,6 +23,7 @@ import SVGNodeJS from '_images/svg/nodejs.svg';
 import SVGPHP from '_images/svg/php.svg';
 import SVGPHPUnit from '_images/svg/phpunit.svg';
 import SVGPostCSS from '_images/svg/postcss.svg';
+import SVGPostgres from '_images/svg/postgres.svg';
 import SVGPrettier from '_images/svg/prettier.svg';
 import SVGReact from '_images/svg/react.svg';
 import SVGReactRouter from '_images/svg/react-router.svg';
@@ -75,6 +76,7 @@ const enums = Object.freeze({
   debian: 'debian',
   docker: 'docker',
   eslint: 'eslint',
+  expressjs: 'expressjs',
   gatsby: 'gatsby',
   git: 'git',
   gulp: 'gulp',
@@ -89,6 +91,7 @@ const enums = Object.freeze({
   php: 'php',
   phpunit: 'phpunit',
   postcss: 'postcss',
+  postgres: 'postgres',
   prettier: 'prettier',
   react: 'react',
   reactRouter: 'react-router',
@@ -135,6 +138,10 @@ const definitions = {
   [enums.eslint]: {
     src: SVGESLint,
     name: 'ESLint',
+  },
+  [enums.expressjs]: {
+    src: SVGNodeJS,
+    name: 'Express.js',
   },
   [enums.gatsby]: {
     src: SVGGatsby,
@@ -191,6 +198,10 @@ const definitions = {
   [enums.postcss]: {
     src: SVGPostCSS,
     name: 'PostCSS',
+  },
+  [enums.postgres]: {
+    src: SVGPostgres,
+    name: 'PostgreSQL',
   },
   [enums.prettier]: {
     src: SVGPrettier,
