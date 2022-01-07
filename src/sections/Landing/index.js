@@ -76,8 +76,8 @@ const LandingSection = React.forwardRef(({ scrollToAboutMeSection }, ref) => (
       <Position>Modern JavaScript Developer</Position>
 
       <Tagline>
-        I am a Modern JavaScript Developer who builds modern full-stack web
-        applications with the latest technologies.
+        I am a Modern JavaScript Developer who builds modern Full-Stack Web
+        Applications with the latest technologies.
       </Tagline>
 
       <div style={{ marginTop: '25px' }}>
