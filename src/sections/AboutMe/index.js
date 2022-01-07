@@ -82,7 +82,15 @@ const AboutMeSection = React.forwardRef(
           </Grid>
         </ContainerGrid>
 
-        <div style={{ marginTop: '25px', textAlign: 'center' }}>
+        <div style={{ marginTop: '25px', textAlign: 'left' }}>
+          When I am not developing, I tinker around with the homelab, servers,
+          and home networking. My most recent goal was to decommission some old
+          computer hardware, virtualize, and consolidate all my services such as
+          pfSense and Nextcloud into a Proxmox Virtual Environment running on a
+          single machine.
+        </div>
+
+        <div style={{ marginTop: '50px', textAlign: 'center' }}>
           <GenericButton type="button" onClick={scrollToWorkExperienceSection}>
             See Where I've Worked
           </GenericButton>
