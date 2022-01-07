@@ -11,6 +11,7 @@ const arrayTechnologiesUsed = [
   technologyEnums.redux,
   technologyEnums.reactRouter,
   technologyEnums.node,
+  technologyEnums.expressjs,
   technologyEnums.eslint,
   technologyEnums.stylelint,
   technologyEnums.prettier,
@@ -21,6 +22,8 @@ const arrayTechnologiesUsed = [
   technologyEnums.jest,
   technologyEnums.styledComponents,
   technologyEnums.webpack,
+  technologyEnums.postgres,
+  technologyEnums.mysql,
   technologyEnums.php,
   technologyEnums.wordpress,
 ];
