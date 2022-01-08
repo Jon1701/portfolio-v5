@@ -1622,6 +1622,7 @@ const technologiesUsed = [
   technologyEnums.react,
   technologyEnums.redux,
   technologyEnums.reactRouter,
+  technologyEnums.formatjs,
   technologyEnums.styledComponents,
   technologyEnums.sass,
   technologyEnums.eslint,
