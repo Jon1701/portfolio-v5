@@ -15,6 +15,7 @@ const arrayTechnologiesUsed = [
   technologyEnums.eslint,
   technologyEnums.stylelint,
   technologyEnums.prettier,
+  technologyEnums.formatjs,
   technologyEnums.debian,
   technologyEnums.docker,
   technologyEnums.gatsby,
