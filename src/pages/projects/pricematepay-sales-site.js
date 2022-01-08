@@ -171,6 +171,7 @@ const technologiesUsed = [
   technologyEnums.css3,
   technologyEnums.gatsby,
   technologyEnums.react,
+  technologyEnums.formatjs,
   technologyEnums.sass,
   technologyEnums.styledComponents,
   technologyEnums.eslint,
