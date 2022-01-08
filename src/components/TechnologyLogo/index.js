@@ -10,6 +10,7 @@ import SVGCSS3 from '_images/svg/css3.svg';
 import SVGDebian from '_images/svg/debian.svg';
 import SVGDocker from '_images/svg/docker.svg';
 import SVGESLint from '_images/svg/eslint.svg';
+import SVGFormatJS from '_images/svg/formatjs.svg';
 import SVGGatsby from '_images/svg/gatsby.svg';
 import SVGGit from '_images/svg/git.svg';
 import SVGGulp from '_images/svg/gulp.svg';
@@ -77,6 +78,7 @@ const enums = Object.freeze({
   docker: 'docker',
   eslint: 'eslint',
   expressjs: 'expressjs',
+  formatjs: 'Format.JS',
   gatsby: 'gatsby',
   git: 'git',
   gulp: 'gulp',
@@ -142,6 +144,10 @@ const definitions = {
   [enums.expressjs]: {
     src: SVGNodeJS,
     name: 'Express.js',
+  },
+  [enums.formatjs]: {
+    src: SVGFormatJS,
+    name: 'Format.JS',
   },
   [enums.gatsby]: {
     src: SVGGatsby,
