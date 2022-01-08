@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import InternalLinkButton from '_components/Buttons/Button/InternalLink';
 import mobileBreakpoint from '_util/responsiveDesign/mobileBreakpoint';
@@ -115,7 +116,9 @@ const ContainerLinkButton = styled.div`
 const ProjectCard = ({ name, imageSrc, urlToProjectDetailsPage, children }) => (
   <Container>
     <ContainerImage>
-      <Image src={imageSrc} alt={name} draggable="false" />
+      <Link to={urlToProjectDetailsPage}>
+        <Image src={imageSrc} alt={name} draggable="false" />
+      </Link>
     </ContainerImage>
     <ContainerDescription>
       <ContainerProjectName>{name}</ContainerProjectName>
