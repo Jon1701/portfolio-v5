@@ -36,13 +36,36 @@ const WorkExperienceSection = React.forwardRef(
           <ul>
             <li>
               Built the front-end for the Pricematepay Gateway API which
-              facilitated accepting credit card payments, issuing refunds for
-              organizations from customers, as well as sending Hosted Invoices
-              to customers
+              facilitated accepting credit card payments and issuing refunds for
+              organizations and their customers.
+              <br />
+              The front-end was built using React, Redux, and React Router,
+              Styled-Components, and leveraged JSON Web Tokens for
+              authentication. React-Intl/Format.js was also used for
+              Internationalization.
             </li>
             <li>
-              Built the Pricematepay Sales Site to help the Sales team acquire
-              new clients for Pricematepay
+              Built the front-end for the Pricematepay Gateway API which
+              facilitated accepting credit card payments and issuing refunds for
+              organizations and their customers.
+              <br />
+              The Sales Site was built using React, GatsbyJS, and
+              Styled-Components.
+            </li>
+            <li>
+              Wrote unit and snapshot tests using Jest and Enzyme to prevent
+              regressions from future iterations on the codebase.
+            </li>
+            <li>
+              Used various static analysis tools such as ESLint, Stylelint,
+              EditorConfig, and Prettier to maintain consistent coding styles
+              between multiple developers.
+            </li>
+            <li>Performed code reviews for Pull Requests.</li>
+            <li>Contributed to weekly sprint planning.</li>
+            <li>
+              Contributed to designs by providing feedback on usability and
+              functionality.
             </li>
           </ul>
         </WorkExperienceEntry>
@@ -56,40 +79,56 @@ const WorkExperienceSection = React.forwardRef(
           <ul>
             <li>
               Collaborated with a team of developers to build the EVO WordPress
-              SEO Plugin which allowed users to easily manage SEO for their
-              WordPress web properties
+              SEO Plugin which allowed users to easily add and manage SEO for
+              their WordPress web properties.
+              <br />
+              The plugin was built using PHP, jQuery, Sass, and MySQL using a
+              containerized Docker environment for rapid local development.
             </li>
             <li>
-              Also collaborated to develop the EVO Member Portal where users
-              could manage and purchase subscription keys for their sites using
-              the plugin so that they may take advantage of features such as
-              Google Search Console and Google Analytics integrations
+              Also collaborated to develop the front-end for the EVO Member
+              Portal where users could manage and purchase subscription keys for
+              their sites using the plugin so that they may take advantage of
+              features such as Google Search Console and Google Analytics
+              integrations.
+              <br />
+              It was built using React, React Router, Redux, Sass, and utilized
+              Stripe as its payment processor.
+            </li>
+            <li>
+              Containerized the EVO Plugin website into a Docker environment for
+              easier development, QA, iteration history, and deployment to a
+              Production environment.
+              <br />
+              The website design and implementation were contracted out to a
+              third-party which did not conform to our usual development and
+              deployment processes.
             </li>
             <li>
               Worked on various smaller projects for external clients such as
               building the temporary website for Navigate Group, modifying the
-              Magento front-end for the GlasVapor storefront, preventing hot
+              Magento front-end for the GlasVapor storefront, prevent hot
               linking of resources from outside the Hloom domain, and building
-              the website for THIRTY SIX KNOTS
+              the website for THIRTY SIX KNOTS.
             </li>
             <li>
               Used various static analysis tools such as ESLint, Stylelint,
-              Prettier, EditorConfig, and PHP CodeSniffer to maintain consistent
-              coding styles between multiple developers
+              EditorConfig, and PHP CodeSniffer to maintain consistent coding
+              styles between multiple developers.
             </li>
             <li>
-              Wrote tests using the Mocha, Jest, and PHPUnit testing frameworks
-              to ensure code was accurate, and prevent regressions from future
-              iterations upon the codebase
+              Wrote tests for the Mocha, Jest, and PHPUnit testing frameworks to
+              ensure code was accurate, and to prevent regressions from future
+              iterations on the codebase.
             </li>
             <li>
-              Performed code reviews for submitted Pull Requests and performed
-              QA duties before merging code
+              Performed code reviews for Pull Requests, and performed QA duties
+              before merging code.
             </li>
-            <li>Contributed to weekly sprint planning</li>
+            <li>Contributed to weekly sprint planning.</li>
             <li>
               Contributed to designs by providing feedback on usability and
-              functionality
+              functionality.
             </li>
           </ul>
         </WorkExperienceEntry>
@@ -106,32 +145,32 @@ const WorkExperienceSection = React.forwardRef(
               instance running Debian Server and MongoDB which extracted NHL
               game data, sanitized it, and restructured it for use in an
               infographic which highlighted player and game statistics for
-              hockey games featuring the Toronto Maple Leafs
+              hockey games featuring the Toronto Maple Leafs.
             </li>
             <li>
               Performed ETL processing to migrate client databases onto in-house
-              database management systems
+              database management systems.
             </li>
             <li>
               Developed demos which highlighted the analytical capabilities of
               the agency, not limited to: natural language processing,
-              geospatial analytics, and machine learning
+              geospatial analytics, and machine learning.
             </li>
             <li>
               Performed data analysis on customer data provided by clients, and
               generated various reports containing various key performance
-              indicators and metrics as requested by the client
+              indicators and metrics as requested by the client.
             </li>
             <li>
               Set up and maintained consistent development environments and
               tools on all developer machines, and created and configured the
-              company’s SVN repository
+              company’s SVN repository.
             </li>
             <li>
               Designed, tested, and deployed the database architecture used on
               development and production machines within the Analytics
               Department, and maintained security access controls for all users
-              and applications
+              and applications.
             </li>
           </ul>
         </WorkExperienceEntry>
